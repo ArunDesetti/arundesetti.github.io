@@ -121,6 +121,18 @@ width: 100%;
 .contact-form textarea {
     resize: none; /* Disable resizing for a cleaner look */
 }
+.contact-form input.error,
+.contact-form textarea.error {
+    border-color: red;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
 footer {
     display: flex;
     position: relative;
