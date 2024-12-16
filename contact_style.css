@@ -6,6 +6,7 @@ body {
     background-color: #050505;
     color: whitesmoke;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -13,10 +14,12 @@ header {
     padding: 15px 30px;
     background-color: #050505;
 }
+
 #portfolio {
     font-size: 1.8em;
     font-weight: bold;
 }
+
 .nav-to a {
     margin: 0 15px;
     color: white;
@@ -24,55 +27,67 @@ header {
     font-size: 1em;
     transition: color 0.3s;
 }
+
 .nav-to a:hover {
     color: rgb(92, 216, 222);
 }
+
 .about-section, .contact-section {
     padding: 50px 20px;
 }
+
 .about-section {
     background-color: #050505;
     text-align: center;
 }
+
 .about-me-heading h3 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
+
 .text-wrapper {
     font-size: 1.1em;
     line-height: 1.8;
     color: #c9c0c0;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
+
 .text-wrapper a {
     color: rgb(92, 216, 222);
     text-decoration: none;
     font-weight: bold;
 }
+
 .text-wrapper a:hover {
     text-decoration: underline;
 }
+
 .contact-section {
     background-color: #1a1a1a;
     text-align: center;
 }
+
 .contact-section h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
+
 .contact-section p {
     font-size: 1.2em;
     margin-bottom: 30px;
     color: #c9c0c0;
+    padding: 0 20px;
 }
 
 .contact-form {
-    background-color: #1e1e1e; /* Slightly lighter dark for the form */
+    background-color: #1e1e1e;
     border-radius: 8px;
-    padding: 50px 100px;
+    padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -81,7 +96,8 @@ header {
     font-size: 14px;
     margin-bottom: 8px;
     display: block;
-    color: #b3b3b3; /* Softer text for labels */
+    color: #b3b3b3;
+    text-align: left;
 }
 
 .contact-form input, .contact-form textarea {
@@ -90,37 +106,42 @@ header {
     margin-bottom: 20px;
     border: 1px solid #333;
     border-radius: 4px;
-    background-color: #292929; /* Input background */
-    color: #fff; /* Input text */
+    background-color: #292929;
+    color: #fff;
     font-size: 14px;
     outline: none;
+    box-sizing: border-box;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #ff6f61; /* Accent color for focus */
+    border-color: #ff6f61;
     box-shadow: 0 0 5px #ff6f61;
 }
 
 .contact-form button {
-background-color: #ff6f61; /* Accent color */
-color: #fff;
-border: none;
-border-radius: 4px;
-padding: 10px 20px;
-font-size: 14px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-width: 100%;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
+
 .contact-form button:hover {
-    background-color: #e65a50; /* Darker shade for hover */
+    background-color: #e65a50;
 }
+
 .contact-form button:active {
-    background-color: #cc4d45; /* Even darker shade for active click */
+    background-color: #cc4d45;
 }
+
 .contact-form textarea {
-    resize: none; /* Disable resizing for a cleaner look */
+    resize: none;
 }
+
 .contact-form input.error,
 .contact-form textarea.error {
     border-color: red;
@@ -135,26 +156,123 @@ width: 100%;
 
 footer {
     display: flex;
-    position: relative;
-    margin-top: 03%;
-    margin-bottom: 4%;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 footer .links {
-    position: relative;
-    flex: 1;
-    display: inline-flex;
-    gap: 45px;
-    margin-left: 4%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
+
 footer a {
     text-decoration: none;
     color: whitesmoke;
 }
+
 footer .mail {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
     font-weight: 100;
-    margin-right: 4%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    #portfolio {
+        font-size: 1.5em;
+    }
+
+    .about-me-heading h3 {
+        font-size: 2em;
+    }
+
+    .text-wrapper {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-section p {
+        font-size: 1.1em;
+    }
+
+    .contact-form {
+        padding: 20px;
+        width: 95%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .links {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    footer .mail {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #portfolio {
+        font-size: 1.3em;
+    }
+
+    .nav-to a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+
+    .about-me-heading h3 {
+        font-size: 1.8em;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    footer .links {
+        gap: 20px;
+    }
+
+    footer .mail {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    #portfolio {
+        font-size: 1.2em;
+    }
+
+    .nav-to a {
+        margin: 0 8px;
+        font-size: 0.8em;
+    }
+
+    footer .links {
+        gap: 15px;
+    }
 }

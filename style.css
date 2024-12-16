@@ -16,7 +16,7 @@ header {
     display: flex;
     position: relative;
     margin-top: 33px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 header #portfolio {
@@ -327,6 +327,18 @@ footer .mail {
 
 /* Media Queries */
 /* Large Screens (1200px and up) */
+@media screen and (max-width: 3000px) {
+    .circles-wrapper{
+        top: 35%;
+    }
+    .about-section h3{
+        left: -70px;
+    }
+    .text-wrapper {
+        max-width: 100vh;
+    }
+    
+}
 @media screen and (min-width: 1200px) {
     .circles-wrapper{
         top: 35%;
@@ -346,7 +358,7 @@ footer .mail {
         z-index: 1;
     }
     .text-wrapper {
-        left: 40%;
+        left: 35%;
         top: -20%;
         font-size: 1.3em;
         max-width: 100vh;
@@ -394,6 +406,7 @@ footer .mail {
         display: block;
         position: absolute;
         width: 40%;
+        margin-top: 90%;
         right: 0;
         margin: 0 auto;
         z-index: 1;
@@ -401,14 +414,14 @@ footer .mail {
 
     .about-section #circle1 {
         margin-top: 10px;
-        height: 225px;
-        width: 225px;
+        height: 160px;
+        width: 160px;
         margin-left: 40%;
     }
 
     .about-section #circle2 {
-        height: 178px;
-        width: 178px;
+        height: 120px;
+        width: 120px;
         top: 33px;
         margin-left: 7%;
 
@@ -421,7 +434,7 @@ footer .mail {
     }
 
     .text-wrapper {
-        left: 0;
+        left: 0%;
         top: 0;
         width: 60%;
         padding: 20px;
@@ -448,6 +461,7 @@ footer .mail {
         top: 20%;
         width: -10%;
     }
+
     .skills-section .tools{
         width: 60%;
     }
@@ -515,7 +529,7 @@ footer .mail {
     .about-section .circles-wrapper{
         position: relative;
         top: -10%;
-        left: -5%;
+        left: -15%;
         right: 50%;
     }
     .about-section #circle2{

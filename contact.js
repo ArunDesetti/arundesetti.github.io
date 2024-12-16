@@ -20,21 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             `
         };
 
-        try {
-            // Open user's default email client
-            const mailtoLink = `mailto:${emailContent.to}?subject=${encodeURIComponent(emailContent.subject)}&body=${encodeURIComponent(emailContent.body)}`;
-            window.location.href = mailtoLink;
-
-            // Clear the form
-            contactForm.reset();
-
-            // Show success message
-            alert('Thank you for your message! Your default email client will open to send the email.');
-
-        } catch (error) {
-            console.error('Error:', error);
-            alert('There was an error sending your message. Please try again or contact directly via email.');
-        }
+        alert('Sorry for your inconvenience, Arun cannot receive any messages at the moment through this method!\nReach him at his email address.');
     });
 
     // Optional: Add form validation
